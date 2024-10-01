@@ -3,9 +3,7 @@ package com.aherrmann.orientation;
 public class Orientation {
     public static String tourner(int nombre) {
         String orientation = "NORD";
-        int resultat;
-
-        resultat = nombre % 4;
+        int resultat = nombre % 4;
 
         orientation = switch (resultat) {
             case 0 -> "NORD";
