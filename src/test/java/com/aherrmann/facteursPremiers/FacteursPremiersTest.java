@@ -1,21 +1,43 @@
 package com.aherrmann.facteursPremiers;
 
 import org.junit.jupiter.api.Test;
-
-import java.util.Arrays;
-import java.util.List;
-
-import static org.junit.jupiter.api.Assertions.*;
 import static org.assertj.core.api.Assertions.*;
+
+import java.util.List;
 
 class FacteursPremiersTest {
 
     @Test
-    void devrait_renvoyer_la_liste_des_diviseurs_premiers_de_ce_nombre() {
+    void devrait_renvoyer_la_liste_des_diviseurs_premiers_de_0() {
         //GIVEN
-        FacteursPremiers facteurs = new FacteursPremiers();
-        int nombre = 3;
-        List<Integer> expected = List.of(3);
+        int nombre = 0;
+        List<Integer> expected = List.of();
+
+        //WHEN
+        List<Integer> resultat = FacteursPremiers.generer(nombre);
+
+        //THEN
+        assertThat(resultat).isEqualTo(expected);
+    }
+
+    @Test
+    void devrait_renvoyer_la_liste_des_diviseurs_premiers_de_1() {
+        //GIVEN
+        int nombre = 1;
+        List<Integer> expected = List.of();
+
+        //WHEN
+        List<Integer> resultat = FacteursPremiers.generer(nombre);
+
+        //THEN
+        assertThat(resultat).isEqualTo(expected);
+    }
+
+    @Test
+    void devrait_renvoyer_la_liste_des_diviseurs_premiers_de_2() {
+        //GIVEN
+        int nombre = 2;
+        List<Integer> expected = List.of(2);
 
         //WHEN
         List<Integer> resultat = FacteursPremiers.generer(nombre);
