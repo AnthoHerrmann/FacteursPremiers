@@ -17,4 +17,40 @@ class OrientationTest {
         //THEN
         assertThat(resultat).isEqualTo("EST");
     }
+
+    @Test
+    void tourner_devrait_retourner_EST_en_donnant_le_nombre_2() {
+        //GIVEN
+        int nombre = 2;
+
+        //WHEN
+        String resultat = Orientation.tourner(nombre);
+
+        //THEN
+        assertThat(resultat).isEqualTo("SUD");
+    }
+
+    @Test
+    void tourner_devrait_retourner_EST_en_donnant_le_nombre_3() {
+        //GIVEN
+        int nombre = 1;
+
+        //WHEN
+        String resultat = Orientation.tourner(nombre);
+
+        //THEN
+        assertThat(resultat).isEqualTo("OUEST");
+    }
+
+    @Test
+    void tourner_devrait_retourner_EST_en_donnant_le_nombre_4() {
+        //GIVEN
+        int nombre = 1;
+
+        //WHEN
+        String resultat = Orientation.tourner(nombre);
+
+        //THEN
+        assertThat(resultat).isEqualTo("NORD");
+    }
 }
