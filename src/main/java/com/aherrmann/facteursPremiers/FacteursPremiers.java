@@ -13,6 +13,13 @@ public class FacteursPremiers {
             nombre = nombre / 2;
         }
 
+        diviseur = 3;
+
+        while(nombre % diviseur == 0) {
+            resultat.add(3);
+            nombre = nombre / 3;
+        }
+
         return resultat;
     }
 }

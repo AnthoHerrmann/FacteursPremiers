@@ -14,8 +14,8 @@ class FacteursPremiersTest {
     void devrait_renvoyer_la_liste_des_diviseurs_premiers_de_ce_nombre() {
         //GIVEN
         FacteursPremiers facteurs = new FacteursPremiers();
-        int nombre = 2;
-        List<Integer> expected = List.of(2);
+        int nombre = 3;
+        List<Integer> expected = List.of(3);
 
         //WHEN
         List<Integer> resultat = FacteursPremiers.generer(nombre);
