@@ -19,7 +19,7 @@ class OrientationTest {
     }
 
     @Test
-    void tourner_devrait_retourner_EST_en_donnant_le_nombre_2() {
+    void tourner_devrait_retourner_SUD_en_donnant_le_nombre_2() {
         //GIVEN
         int nombre = 2;
 
@@ -31,9 +31,9 @@ class OrientationTest {
     }
 
     @Test
-    void tourner_devrait_retourner_EST_en_donnant_le_nombre_3() {
+    void tourner_devrait_retourner_OUEST_en_donnant_le_nombre_3() {
         //GIVEN
-        int nombre = 1;
+        int nombre = 3;
 
         //WHEN
         String resultat = Orientation.tourner(nombre);
@@ -43,9 +43,9 @@ class OrientationTest {
     }
 
     @Test
-    void tourner_devrait_retourner_EST_en_donnant_le_nombre_4() {
+    void tourner_devrait_retourner_NORD_en_donnant_le_nombre_4() {
         //GIVEN
-        int nombre = 1;
+        int nombre = 4;
 
         //WHEN
         String resultat = Orientation.tourner(nombre);
