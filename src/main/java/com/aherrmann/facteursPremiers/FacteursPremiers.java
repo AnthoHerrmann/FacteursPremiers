@@ -14,17 +14,20 @@ public class FacteursPremiers {
         if (nombre > 0) {
 
             while (nombre % diviseur == 0) {
-                resultat.add(2);
-                nombre = nombre / 2;
+                resultat.add(diviseur);
+                nombre = nombre / diviseur;
             }
 
             diviseur += 1;
-            while (nombre % diviseur == 0) {
-                resultat.add(3);
-                nombre = nombre / 3;
+            while (diviseur <= nombre) {
+
+                while (nombre % diviseur == 0) {
+                    resultat.add(diviseur);
+                    nombre = nombre / diviseur;
+                }
+                diviseur += 2;
             }
         }
-
         return resultat;
     }
 }
