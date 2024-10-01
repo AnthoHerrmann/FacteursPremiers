@@ -8,7 +8,7 @@ public class FacteursPremiers {
     public static List<Integer> generer(int nombre) {
 
         List<Integer> resultat;
-        resultat = new ArrayList<Integer>();
+        resultat = new ArrayList<>();
         int diviseur = 2;
 
         if (nombre > 0) {
