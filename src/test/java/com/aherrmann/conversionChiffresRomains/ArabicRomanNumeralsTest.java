@@ -18,6 +18,18 @@ class ArabicRomanNumeralsTest {
     }
 
     @Test
+    void convert_devrait_renvoyer_une_chaine_vide_pour_la_valeur_0() {
+        //GIVEN
+        Integer nombre = 0;
+
+        //WHEN
+        String resultat = ArabicRomanNumerals.convert(nombre);
+
+        //THEN
+        assertThat(resultat).isEqualTo("");
+    }
+
+    @Test
     void convert_devrait_renvoyer_I_pour_la_valeur_1() {
         //GIVEN
         Integer nombre = 1;
