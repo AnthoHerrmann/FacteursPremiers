@@ -12,6 +12,7 @@ public class ArabicRomanNumerals {
                 case 5 -> "V";
                 case 10 -> "X";
                 case 50 -> "L";
+                case 100 -> "C";
                 default -> resultat;
             };
         }

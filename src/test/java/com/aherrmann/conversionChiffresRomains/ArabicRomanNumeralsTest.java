@@ -100,4 +100,16 @@ class ArabicRomanNumeralsTest {
         //THEN
         assertThat(resultat).isEqualTo("L");
     }
+
+    @Test
+    void convert_devrait_renvoyer_C_pour_la_valeur_100() {
+        //GIVEN
+        Integer nombre = 100;
+
+        //WHEN
+        String resultat = ArabicRomanNumerals.convert(nombre);
+
+        //THEN
+        assertThat(resultat).isEqualTo("C");
+    }
 }
