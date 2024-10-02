@@ -7,9 +7,21 @@ import static org.assertj.core.api.Assertions.*;
 class OrientationTest {
 
     @Test
+    void tourner_devrait_retourner_NORD_en_donnant_une_valeur_NULL() {
+        //GIVEN
+        Integer nombre = null;
+
+        //WHEN
+        String resultat = Orientation.tourner(nombre);
+
+        //THEN
+        assertThat(resultat).isEqualTo("NORD");
+    }
+
+    @Test
     void tourner_devrait_retourner_EST_en_donnant_le_nombre_1() {
         //GIVEN
-        int nombre = 1;
+        Integer nombre = 1;
 
         //WHEN
         String resultat = Orientation.tourner(nombre);
@@ -21,7 +33,7 @@ class OrientationTest {
     @Test
     void tourner_devrait_retourner_SUD_en_donnant_le_nombre_2() {
         //GIVEN
-        int nombre = 2;
+        Integer nombre = 2;
 
         //WHEN
         String resultat = Orientation.tourner(nombre);
@@ -33,7 +45,7 @@ class OrientationTest {
     @Test
     void tourner_devrait_retourner_OUEST_en_donnant_le_nombre_3() {
         //GIVEN
-        int nombre = 3;
+        Integer nombre = 3;
 
         //WHEN
         String resultat = Orientation.tourner(nombre);
@@ -45,7 +57,7 @@ class OrientationTest {
     @Test
     void tourner_devrait_retourner_NORD_en_donnant_le_nombre_4() {
         //GIVEN
-        int nombre = 4;
+        Integer nombre = 4;
 
         //WHEN
         String resultat = Orientation.tourner(nombre);

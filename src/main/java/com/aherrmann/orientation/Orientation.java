@@ -1,7 +1,7 @@
 package com.aherrmann.orientation;
 
 public class Orientation {
-    public static String tourner(int nombre) {
+    public static String tourner(Integer nombre) {
         String orientation = "NORD";
         int resultat = nombre % 4;
 
