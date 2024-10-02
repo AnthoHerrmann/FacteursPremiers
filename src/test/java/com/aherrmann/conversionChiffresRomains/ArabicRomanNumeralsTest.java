@@ -28,4 +28,16 @@ class ArabicRomanNumeralsTest {
         //THEN
         assertThat(resultat).isEqualTo("I");
     }
+
+    @Test
+    void convert_devrait_renvoyer_II_pour_la_valeur_2() {
+        //GIVEN
+        Integer nombre = 2;
+
+        //WHEN
+        String resultat = ArabicRomanNumerals.convert(nombre);
+
+        //THEN
+        assertThat(resultat).isEqualTo("II");
+    }
 }

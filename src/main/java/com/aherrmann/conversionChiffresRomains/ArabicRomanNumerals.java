@@ -8,6 +8,10 @@ public class ArabicRomanNumerals {
             if (nombre == 1) {
                 resultat = "I";
             }
+
+            if (nombre == 2) {
+                resultat = "II";
+            }
         }
 
         return resultat;
