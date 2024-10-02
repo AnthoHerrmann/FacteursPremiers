@@ -40,4 +40,16 @@ class ArabicRomanNumeralsTest {
         //THEN
         assertThat(resultat).isEqualTo("II");
     }
+
+    @Test
+    void convert_devrait_renvoyer_III_pour_la_valeur_3() {
+        //GIVEN
+        Integer nombre = 3;
+
+        //WHEN
+        String resultat = ArabicRomanNumerals.convert(nombre);
+
+        //THEN
+        assertThat(resultat).isEqualTo("III");
+    }
 }

@@ -5,13 +5,12 @@ public class ArabicRomanNumerals {
         String resultat = "";
 
         if (nombre != null) {
-            if (nombre == 1) {
-                resultat = "I";
-            }
-
-            if (nombre == 2) {
-                resultat = "II";
-            }
+            resultat = switch (nombre) {
+                case 1 -> "I";
+                case 2 -> "II";
+                case 3 -> "III";
+                default -> resultat;
+            };
         }
 
         return resultat;
