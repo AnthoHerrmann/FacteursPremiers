@@ -88,4 +88,16 @@ class ArabicRomanNumeralsTest {
         //THEN
         assertThat(resultat).isEqualTo("X");
     }
+
+    @Test
+    void convert_devrait_renvoyer_L_pour_la_valeur_50() {
+        //GIVEN
+        Integer nombre = 50;
+
+        //WHEN
+        String resultat = ArabicRomanNumerals.convert(nombre);
+
+        //THEN
+        assertThat(resultat).isEqualTo("L");
+    }
 }
