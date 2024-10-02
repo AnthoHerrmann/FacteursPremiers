@@ -7,9 +7,9 @@ import static org.assertj.core.api.Assertions.*;
 class OrientationTest {
 
     @Test
-    void tourner_devrait_retourner_NORD_en_donnant_une_valeur_NULL() {
+    void tourner_devrait_retourner_NORD_en_donnant_une_valeur_0() {
         //GIVEN
-        Integer nombre = null;
+        Integer nombre = 0;
 
         //WHEN
         String resultat = Orientation.tourner(nombre);
