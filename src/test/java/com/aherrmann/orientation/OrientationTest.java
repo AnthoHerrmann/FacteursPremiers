@@ -65,4 +65,16 @@ class OrientationTest {
         //THEN
         assertThat(resultat).isEqualTo("NORD");
     }
+
+    @Test
+    void tourner_devrait_retourner_SUD_en_donnant_une_valeur_42() {
+        //GIVEN
+        Integer nombre = 42;
+
+        //WHEN
+        String resultat = Orientation.tourner(nombre);
+
+        //THEN
+        assertThat(resultat).isEqualTo("SUD");
+    }
 }
