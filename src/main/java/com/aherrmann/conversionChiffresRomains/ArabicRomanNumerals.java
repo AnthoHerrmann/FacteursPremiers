@@ -1,4 +1,4 @@
 package com.aherrmann.conversionChiffresRomains;
 
-public class ConversionChiffresRomains {
+public class ArabicRomanNumerals {
 }
