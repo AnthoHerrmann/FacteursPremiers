@@ -112,4 +112,16 @@ class ArabicRomanNumeralsTest {
         //THEN
         assertThat(resultat).isEqualTo("C");
     }
+
+    @Test
+    void convert_devrait_renvoyer_D_pour_la_valeur_500() {
+        //GIVEN
+        Integer nombre = 500;
+
+        //WHEN
+        String resultat = ArabicRomanNumerals.convert(nombre);
+
+        //THEN
+        assertThat(resultat).isEqualTo("D");
+    }
 }
