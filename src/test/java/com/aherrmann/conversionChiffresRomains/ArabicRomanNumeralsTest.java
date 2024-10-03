@@ -208,4 +208,16 @@ class ArabicRomanNumeralsTest {
         //THEN
         assertThat(resultat).isEqualTo("M");
     }
+
+    @Test
+    void convert_devrait_renvoyer_MMMCMLVIII_pour_la_valeur_3958() {
+        //GIVEN
+        Integer nombre = 3958;
+
+        //WHEN
+        String resultat = ArabicRomanNumerals.convert(nombre);
+
+        //THEN
+        assertThat(resultat).isEqualTo("MMMCMLVIII");
+    }
 }
