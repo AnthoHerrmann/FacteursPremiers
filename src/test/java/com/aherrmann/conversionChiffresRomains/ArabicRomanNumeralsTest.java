@@ -114,18 +114,6 @@ class ArabicRomanNumeralsTest {
     }
 
     @Test
-    void convert_devrait_renvoyer_L_pour_la_valeur_50() {
-        //GIVEN
-        Integer nombre = 50;
-
-        //WHEN
-        String resultat = ArabicRomanNumerals.convert(nombre);
-
-        //THEN
-        assertThat(resultat).isEqualTo("L");
-    }
-
-    @Test
     void convert_devrait_renvoyer_XL_pour_la_valeur_40() {
         //GIVEN
         Integer nombre = 40;
@@ -138,6 +126,18 @@ class ArabicRomanNumeralsTest {
     }
 
     @Test
+    void convert_devrait_renvoyer_L_pour_la_valeur_50() {
+        //GIVEN
+        Integer nombre = 50;
+
+        //WHEN
+        String resultat = ArabicRomanNumerals.convert(nombre);
+
+        //THEN
+        assertThat(resultat).isEqualTo("L");
+    }
+
+    @Test
     void convert_devrait_renvoyer_C_pour_la_valeur_100() {
         //GIVEN
         Integer nombre = 100;
@@ -147,6 +147,18 @@ class ArabicRomanNumeralsTest {
 
         //THEN
         assertThat(resultat).isEqualTo("C");
+    }
+
+    @Test
+    void convert_devrait_renvoyer_CD_pour_la_valeur_400() {
+        //GIVEN
+        Integer nombre = 400;
+
+        //WHEN
+        String resultat = ArabicRomanNumerals.convert(nombre);
+
+        //THEN
+        assertThat(resultat).isEqualTo("CD");
     }
 
     @Test
