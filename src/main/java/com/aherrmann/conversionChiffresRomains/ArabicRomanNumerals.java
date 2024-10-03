@@ -19,6 +19,7 @@ public class ArabicRomanNumerals {
                 case 100 -> "C";
                 case 400 -> "CD";
                 case 500 -> "D";
+                case 900 -> "CM";
                 case 1000 -> "M";
                 default -> resultat;
             };

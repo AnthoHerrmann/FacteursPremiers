@@ -186,6 +186,18 @@ class ArabicRomanNumeralsTest {
     }
 
     @Test
+    void convert_devrait_renvoyer_M_pour_la_valeur_900() {
+        //GIVEN
+        Integer nombre = 900;
+
+        //WHEN
+        String resultat = ArabicRomanNumerals.convert(nombre);
+
+        //THEN
+        assertThat(resultat).isEqualTo("CM");
+    }
+
+    @Test
     void convert_devrait_renvoyer_M_pour_la_valeur_1000() {
         //GIVEN
         Integer nombre = 1000;
