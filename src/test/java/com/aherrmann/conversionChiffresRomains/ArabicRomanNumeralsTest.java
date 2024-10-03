@@ -138,6 +138,18 @@ class ArabicRomanNumeralsTest {
     }
 
     @Test
+    void convert_devrait_renvoyer_XC_pour_la_valeur_90() {
+        //GIVEN
+        Integer nombre = 90;
+
+        //WHEN
+        String resultat = ArabicRomanNumerals.convert(nombre);
+
+        //THEN
+        assertThat(resultat).isEqualTo("XC");
+    }
+
+    @Test
     void convert_devrait_renvoyer_C_pour_la_valeur_100() {
         //GIVEN
         Integer nombre = 100;
