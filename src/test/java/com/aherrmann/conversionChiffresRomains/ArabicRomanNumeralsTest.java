@@ -90,6 +90,18 @@ class ArabicRomanNumeralsTest {
     }
 
     @Test
+    void convert_devrait_renvoyer_IV_pour_la_valeur_9() {
+        //GIVEN
+        Integer nombre = 9;
+
+        //WHEN
+        String resultat = ArabicRomanNumerals.convert(nombre);
+
+        //THEN
+        assertThat(resultat).isEqualTo("IX");
+    }
+
+    @Test
     void convert_devrait_renvoyer_X_pour_la_valeur_10() {
         //GIVEN
         Integer nombre = 10;
