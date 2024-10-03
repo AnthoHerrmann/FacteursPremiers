@@ -126,6 +126,18 @@ class ArabicRomanNumeralsTest {
     }
 
     @Test
+    void convert_devrait_renvoyer_XL_pour_la_valeur_40() {
+        //GIVEN
+        Integer nombre = 40;
+
+        //WHEN
+        String resultat = ArabicRomanNumerals.convert(nombre);
+
+        //THEN
+        assertThat(resultat).isEqualTo("XL");
+    }
+
+    @Test
     void convert_devrait_renvoyer_C_pour_la_valeur_100() {
         //GIVEN
         Integer nombre = 100;
